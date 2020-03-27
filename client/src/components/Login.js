@@ -33,12 +33,19 @@ class Login extends React.Component {
     .catch(error => console.log(error));
   }
 
-  return (
-    <>
-      <h1>Welcome to the Bubble App!</h1>
-      <p>Build a login page here</p>
-    </>
-  );
+
+  render() {
+    return (
+      <div>
+        <h2>Login</h2>
+        <form onSubmit={this.login}>
+          <input type="text" name="username" placeholder="username" value={this.state.credentials.username} onChange={this.handleChange} />
+          <input type="text" name="password" placeholder="password" value={this.state.credentials.password} onChange={this.handleChange} />
+          <button type='submit'>Log In</button>
+        </form>
+      </div>
+    )
+  }
 };
 
 export default Login;
