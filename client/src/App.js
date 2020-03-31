@@ -10,10 +10,8 @@ import './styles.scss';
 function App() {
   return (
     <div className="App">
-      <h2>Welcome to the Bubble App</h2>
-      
       <Switch>
-        <Route exact path="/login" component={Login} />
+        <Route exact path="/" component={Login} />
         <PrivateRoute exact path="/bubble-page" component={BubblePage} />
       </Switch>
     </div>

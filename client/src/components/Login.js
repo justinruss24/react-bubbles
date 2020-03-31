@@ -32,10 +32,12 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="bubbles">
+        <h2>Welcome to the Bubble App</h2>
         <h3>Login!</h3>
-        <form onSubmit={this.login}>
+        <form className="log-form" onSubmit={this.login}>
           <input
+            className="logins"
             type="text"
             name="username"
             placeholder="username"
@@ -43,13 +45,14 @@ class Login extends React.Component {
             onChange={this.handleChange}
           />
           <input
+            className="logins"
             type="password"
             name="password"
             placeholder="password"
             value={this.state.credentials.password}
             onChange={this.handleChange}
           />
-          <button>Log in</button>
+          <button className="log-sub" type="submit">Log in</button>
         </form>
       </div>
     );

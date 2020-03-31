@@ -14,6 +14,8 @@ body,
   font-family: "Montserrat", sans-serif;
   text-align: center;
   display: flex;
+  justify-content: center;
+
 
   svg {
     height: 100%;
@@ -98,6 +100,26 @@ form {
   }
 }
 
+.log-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h2 {
   padding: 2%;
+}
+.logins {
+  width: 200px;
+  margin-top: 1%;
+}
+
+.log-sub {
+  margin: 2%;
+}
+.bubbles {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fb07af9e-a4d5-4f2a-8e48-4fd3da8229c0/d30cl83-eb74c6dc-dd8d-467a-ac40-9d8c85ff4d34.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZiMDdhZjllLWE0ZDUtNGYyYS04ZTQ4LTRmZDNkYTgyMjljMFwvZDMwY2w4My1lYjc0YzZkYy1kZDhkLTQ2N2EtYWM0MC05ZDhjODVmZjRkMzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.htc0Mfm5qD0hLwZogVmJkv6mr1MBdL0O114FRSXsEI0');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .8;
 }

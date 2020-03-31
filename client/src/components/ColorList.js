@@ -29,6 +29,7 @@ const ColorList = ({ colors, updateColors }) => {
             .get('/api/colors')
             .then(response => {
               console.log(response);
+              setEditing(false);
               updateColors(response.data)
         })
             .catch(error => console.log(error));
